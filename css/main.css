@@ -177,6 +177,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199.98px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
 .logo {
   text-decoration: none;
   color: var(--active-color);
@@ -488,7 +494,6 @@ img {
 .hero-bg .hero {
   text-align: center;
   max-width: 1600px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;

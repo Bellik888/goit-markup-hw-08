@@ -9,4 +9,7 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  @media screen and (max-width: 1199.98px) {
+    font-size: 28px;
+  }
 }
