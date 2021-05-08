@@ -461,6 +461,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-bg {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-bg {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/adaptive/bg/mob-bg-2x.jpg);
@@ -494,8 +501,6 @@ img {
 .hero-bg .hero {
   text-align: center;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -575,6 +580,10 @@ img {
   .features-lists .features-lists__item {
     --grid-item: 4;
   }
+}
+
+.features-lists .features-lists__item:not(:first-child) {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
