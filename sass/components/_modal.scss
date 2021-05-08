@@ -55,7 +55,7 @@
     color: var(--primary-text-color);
   }
   .modal__input-wrap {
-    display: block;
+    display: flex;
     position: relative;
     margin-top: 4px;
     margin-bottom: 10px;
@@ -126,6 +126,7 @@
     background-image: url(../image/form/Vector.svg);
     width: 16px;
     height: 15px;
+    margin-left: -11px;
   }
   .modal__checkbox:checked + .modal__checkbox-icon {
     background-image: url(../image/form/icon-check.svg);
