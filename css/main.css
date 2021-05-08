@@ -701,8 +701,10 @@ img {
   }
 }
 
-.our-team .our-team__item:not(:first-child) {
-  margin-top: var(--primary-margin);
+@media screen and (max-width: 767.98px) {
+  .our-team .our-team__item:not(:first-child) {
+    margin-top: var(--primary-margin);
+  }
 }
 
 @media screen and (min-width: 768px) {
