@@ -19,6 +19,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 111;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
@@ -29,6 +30,7 @@
   border-radius: 4px;
   @media screen and (max-width: 1199.98px) {
     max-width: 450px;
+    width: 100%;
     min-height: 609px;
   }
   @media screen and (min-width: 1200px) {
@@ -120,13 +122,13 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    display: none;
   }
   .modal__checkbox-icon {
     display: inline-block;
     background-image: url(../image/form/Vector.svg);
     width: 16px;
     height: 15px;
-    margin-left: -11px;
   }
   .modal__checkbox:checked + .modal__checkbox-icon {
     background-image: url(../image/form/icon-check.svg);

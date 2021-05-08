@@ -64,6 +64,7 @@ body {
   background-color: var(--white-color);
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .lists {
@@ -1324,6 +1325,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 999;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: 528px;
@@ -1338,6 +1340,7 @@ img {
 @media screen and (max-width: 1199.98px) {
   .modal {
     max-width: 450px;
+    width: 100%;
     min-height: 609px;
   }
 }
@@ -1472,10 +1475,11 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  display: none;
 }
 
 .modal .modal__checkbox-icon {
-  display: inline-block;
+  display: block;
   background-image: url(../image/form/Vector.svg);
   width: 16px;
   height: 15px;

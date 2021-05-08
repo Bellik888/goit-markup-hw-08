@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студія</title>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
-    
 </head>
 
 <body>
@@ -97,7 +100,7 @@
     <!-- Main content -->
      <main>
         <!-- hero-->
-        <section>
+        <section class="hero-bg">
             <div class="hero">
             <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="button hero__button" data-modal-open>
@@ -140,17 +143,32 @@
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="lists works__lists">
-                    <li class="works__item"> <img src="./image/works/img5.jpg" alt="чоловік набирає текст на клавіатурі" width="370">
+                    <li class="works__item"> 
+                        <picture>
+                            <source srcset="./image/adaptive/about/deskt1.jpg 1x,
+                                        ./image/adaptive/about/deskt1-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <img src="./image/works/img5.jpg" alt="Проектирование" width="370" />
+                        </picture>
                         <div class="works__label">
                             <p class="works__text">Десктопные приложения</p>
                         </div>
                     </li>
-                    <li class="works__item"> <img src="./image/works/img-6.jpg" alt="чоловік створює мобільний додаток" width="370">
+                    <li class="works__item">
+                        <picture>
+                            <source srcset="./image/adaptive/about/deskt2.jpg 1x,
+                                        ./image/adaptive/about/deskt2-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <img src="/image/works/img-6.jpg" alt="Дизайн" width="370" />
+                        </picture>
                         <div class="works__label">
                             <p class="works__text">Мобильные приложения</p>
                         </div>
                     </li>
-                    <li class="works__item"> <img src="./image/works/img7.jpg" alt="планшет з кольоровим спектром" width="370">
+                    <li class="works__item">
+                        <picture>
+                            <source srcset="./image/adaptive/about/deskt3.jpg 1x,
+                                        ./image/adaptive/about/deskt3-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <img src="./image/works/img7.jpg" alt="Редакция" width="370" />
+                        </picture>
                         <div class="works__label">
                             <p class="works__text">Дизайнерские решения</p>
                         </div>
@@ -165,7 +183,15 @@
                 <h2 class="title">Наша команада</h2>
                 <ul class="lists our-team__lists">
                     <li class="our-team__item">
-                            <img src="./image/team/img.jpg" alt="молодий чоловік в бурдовій футболці" width="270">
+                        <picture>
+                            <source srcset="./image/adaptive/gallery/desktop/1deskt-1x.jpg 1x,
+                                        ./image/adaptive/gallery/desktop/1deskt-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/tablet/1tab-1x.jpg 1x,
+                                        ./image/adaptive/gallery/tablet/1tab-2x.jpg 2x" media="(min-width: 768px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/mobile/1mob-1x.jpg 1x,
+                                        ./image/adaptive/gallery/mobile/1mob-2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./image/team/img.jpg" alt="Игорь Демьяненко" width="450" />
+                        </picture>
                             <div class="our-team__info">
                                 <h3 class="our-team__title">Игорь Демьяненко</h3>
                                 <p lang="en" class="our-team__posistion">Product Designer</p>
@@ -202,7 +228,15 @@
                        </div>
                     </li>
                     <li class="our-team__item">
-                            <img src="./image/team/img-2.jpg" alt="молода жінка зі світлим волоссям" width="270">
+                        <picture>
+                            <source srcset="./image/adaptive/gallery/desktop/2deskt-1x.jpg 1x,
+                                        ./image/adaptive/gallery/desktop/2deskt-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/tablet/2tab-1x.jpg 1x,
+                                        ./image/adaptive/gallery/tablet/2tab-2x.jpg 2x" media="(min-width: 768px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/mobile/2mob-1x.jpg 1x,
+                                        ./image/adaptive/gallery/mobile/2mob-2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./image/team/img-2.jpg" alt="Ольга Репина" width="450" />
+                        </picture>
                             <div class="our-team__info">
                                 <h3 class="our-team__title">Ольга Репина</h3>
                                 <p lang="en" class="our-team__posistion">Frontend Developer</p>
@@ -239,7 +273,15 @@
                             </div>
                     </li>
                     <li class="our-team__item">
-                            <img src="./image/team/img-3.jpg" alt="молодий чоловік в голубій сорочці" width="270">
+                        <picture>
+                            <source srcset="./image/adaptive/gallery/desktop/3deskt-1x.jpg 1x,
+                                        ./image/adaptive/gallery/desktop/3deskt-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/tablet/3tab-1x.jpg 1x,
+                                        ./image/adaptive/gallery/tablet/3tab-2x.jpg 2x" media="(min-width: 768px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/mobile/3mob-1x.jpg 1x,
+                                        ./image/adaptive/gallery/mobile/3mob-2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./image/team/img-3.jpg" alt="Николай Тарасов" width="450" />
+                        </picture>
                             <div class="our-team__info">
                                 <h3 class="our-team__title">Николай Тарасов</h3>
                                 <p lang="en" class="our-team__posistion">Marketing</p>
@@ -276,7 +318,15 @@
                             </div>
                     </li>
                     <li class="our-team__item">
-                            <img src="./image/team/img-4.jpg" alt="молодий чоловік в чорній футболці" width="270">
+                        <picture>
+                            <source srcset="./image/adaptive/gallery/desktop/4deskt-1x.jpg 1x,
+                                        ./image/adaptive/gallery/desktop/4deskt-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/tablet/4tab-1x.jpg 1x,
+                                        ./image/adaptive/gallery/tablet/4tab-2x.jpg 2x" media="(min-width: 768px)" type="image/jpg" />
+                            <source srcset="./image/adaptive/gallery/mobile/4mob-1x.jpg 1x,
+                                        ./image/adaptive/gallery/mobile/4mob-2x.jpg 2x" media="(max-width: 767px)" type="image/jpg" />
+                            <img src="./image/team/img-4.jpg" alt="Михаил Ермаков" width="450" />
+                        </picture>
                             <div class="our-team__info">
                                 <h3 class="our-team__title">Михаил Ермаков</h3>
                                 <p lang="en" class="our-team__posistion">UI Designer</p>
