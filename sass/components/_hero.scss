@@ -14,11 +14,14 @@
     ),
     url(../image/hero/bg-hero.jpg);
   background-size: cover;
+  @media screen and (max-width: 1199.98px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 
   .hero__text {
     color: var(--white-color);
     max-width: 695px;
-    height: 120px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: var(--primary-margin);
@@ -28,6 +31,11 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (max-width: 1199.98px) {
+      max-width: 360px;
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
   .hero__button {
     align-items: center;

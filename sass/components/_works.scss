@@ -1,5 +1,8 @@
 .works {
   padding-bottom: 94px;
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
 
   .works__lists {
     display: flex;
@@ -15,6 +18,7 @@
     flex-basis: calc(
       (100% - var(--primary-margin) * var(--grid-item)) / var(--grid-item)
     );
+    --grid-item: 3;
   }
   .works__label {
     display: flex;
