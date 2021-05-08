@@ -582,8 +582,10 @@ img {
   }
 }
 
-.features-lists .features-lists__item:not(:first-child) {
-  margin-top: 30px;
+@media screen and (max-width: 767.98px) {
+  .features-lists .features-lists__item:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1027,10 +1029,6 @@ img {
   height: 24px;
   top: 13px;
   right: 28px;
-}
-
-.sign-in {
-  margin-left: 30px;
 }
 
 .filter-lists {

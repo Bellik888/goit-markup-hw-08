@@ -37,8 +37,10 @@
       --grid-item: 4;
     }
   }
-  .features-lists__item:not(:first-child) {
-    margin-top: 30px;
+  @media screen and (max-width: 767.98px) {
+    .features-lists__item:not(:first-child) {
+      margin-top: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
