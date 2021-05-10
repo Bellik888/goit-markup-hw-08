@@ -4,11 +4,11 @@
   margin-right: calc(-1 * var(--primary-margin));
 
   .features-lists__item::before {
+    content: " ";
     display: block;
+    height: 120px;
     margin-bottom: 30px;
     padding: 25px 100px;
-    content: "";
-    height: 120px;
     background-color: var(--ourteam-bgc-color);
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +39,7 @@
   }
   @media screen and (max-width: 767.98px) {
     .features-lists__item:not(:first-child) {
-      margin-top: 30px;
+      margin-top: var(--primary-margin);
     }
   }
 
