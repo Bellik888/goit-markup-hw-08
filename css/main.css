@@ -1427,4 +1427,29 @@ img {
 .modal__btn-close:hover .btn-close__icon {
   fill: var(--active-color);
 }
+
+.back_to_top {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background: #f3f1f1;
+  fill: black;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.back_to_top:hover {
+  background: #e9ebec;
+}
+
+.back_to_top-show {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
